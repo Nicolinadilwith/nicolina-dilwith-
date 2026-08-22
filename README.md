@@ -1,6 +1,6 @@
 # Nicolina Dilwith
 
-I'm the owner and operator of a small dog daycare business on Oahu. I've been training dogs for almost ten years, and I built the business around maintaining personal connections with dog owners so it feels like a community rather than just a service. My goal is to grow and scale the operation while holding onto that same quality of care and those relationships. This repository is my portfolio workspace — every capability, brief, and analysis I produce this term lands here, organized by what I can do rather than by which course it came from.
+I'm the owner and operator of a small dog daycare business on Oahu. I've been training dogs for almost ten years, and I built the business around maintaining personal connections with dog owners so it feels like a community rather than just a service. My goal is to grow and scale the operation while holding onto that same quality of care and those relationships. 
 
 ## Engagements
 
