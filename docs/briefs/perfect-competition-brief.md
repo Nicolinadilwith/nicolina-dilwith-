@@ -7,9 +7,9 @@ We need to find the most profitable combination of vegetables by taking into acc
 I hypothesize that the most profitable combination of beds will be 7 beds of tomatoes, 18 beds of carrots, and 22 beds of mesclun, for a total of 47 beds. This combination should produce the highest profit because it balances the relatively high price of tomatoes with the lower labor requirements and slower diminishing returns of carrots and mesclun.
 The 7 tomatoes / 18 carrots / 22 mesclun = 47 beds (17 idle) figure is the pre-analysis hypothesis — a guess made before the labor-hours engine was ever run.
 
-How I know I was wrong: The model's actual recommendation, in analysis/figures/Nicolina-Perfect Competition Memo and Reflection.docx, is 10 tomatoes / 19 carrots / 28 mesclun = 57 of 64 beds (only 7 idle), profit $16,586. 
+The model's actual recommendation, in analysis/figures/Nicolina-Perfect Competition Memo and Reflection.docx, is 10 tomatoes / 19 carrots / 28 mesclun = 57 of 64 beds (only 7 idle), profit $16,586. 
 
-Why the hypothesis's 17 idle beds don't hold up:
+How I know I was wrong: 
 
 Recomputing the hypothesis's own numbers: at 7/18/22, the farm uses 3,371 labor-hours against 3,600 available from the farmer + 2 temp workers she'd already need to hire — 229 hours of slack, and nowhere near a point where any crop's next bed costs more than it earns (we know that because the model shows 10 more beds were worth planting). The reflection says: this guess was too conservative on every crop, leaving $11,334 on the table. It wasn't derived from either mechanism — it was an intuitive guess that turned out to undershoot.
 
