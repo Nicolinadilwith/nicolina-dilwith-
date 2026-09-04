@@ -2,7 +2,45 @@
 
 ## Problem
 
-We need to find the most profitable combination of vegetables by taking into account the price, labor, etc. with a maximum of 64 beds.
+We need to find the most profitable combination of vegetables by taking into account:
+
+Season & farm
+
+WEEKS = 36 (season length)
+TOTAL_BED_CAP = 64 total beds (16 beds × 4 plots)
+
+Fixed costs
+
+FARMER_SALARY = $50,000/season — paid regardless of hours actually used
+FIXED_COSTS_OTHER = $20,000/season — overhead
+($70,000 combined, sunk either way — irrelevant to the planting decision itself, only to whether the farm is profitable overall)
+
+Labor available
+
+FARMER_FIELD_HOURS = 720 hrs — the farmer's own capacity, already paid for by her salary
+TEMP_WORKER_HOURS = 1,440 hrs per worker, in whole blocks
+TEMP_WORKER_COST = $25,000 per worker, per block (not a continuous rate)
+MAX_TEMP_WORKERS = 4 — the most temp labor the farm can hire
+
+Prices (fixed because the farm is a price-taker — perfect competition)
+
+Crop	Price/bed
+Tomatoes	$8,800
+Carrots	$2,094
+Mesclun	$2,700
+
+Bed caps (physical limit per crop, plus the farm-wide cap above)
+
+Crop	Max beds
+Tomatoes	20
+Carrots	20
+Mesclun	30
+
+To summarize the problem: 
+Fixed = season, costs, prices, caps, labor supply. 
+Chosen = the three bed counts (workers hired follows automatically). 
+Limits = bed caps and the worker ceiling exist but aren't what bind at the optimum — it's marginal economics that stops each crop, for two different underlying reasons.
+We would like to find the most profitable amount of each crop to plant.
 
 I hypothesize that the most profitable combination of beds will be 7 beds of tomatoes, 18 beds of carrots, and 22 beds of mesclun, for a total of 47 beds. This combination should produce the highest profit because it balances the relatively high price of tomatoes with the lower labor requirements and slower diminishing returns of carrots and mesclun.
 The 7 tomatoes / 18 carrots / 22 mesclun = 47 beds (17 idle) figure is the pre-analysis hypothesis — a guess made before the labor-hours engine was ever run.
