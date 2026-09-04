@@ -1,7 +1,8 @@
-# Perfect competition
+# Marginal analysis
 
 Capability: modeling diminishing returns to labor and finding the profit-maximizing crop mix for
-a price-taking farm (perfect competition — price per bed is fixed, not set by the farm).
+a price-taking farm (perfect competition — price per bed is fixed, not set by the farm) by
+comparing marginal cost to price bed by bed.
 
 - `spec.md` — the specification of the model's engine: the labor-hours formula, the two labor-cost
   allocation conventions, the objective, and the constraints. Written in logic (named parameters
