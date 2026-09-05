@@ -20,11 +20,11 @@ You did not quietly edit it. You kept 7/18/22, labelled it as the pre-analysis g
 
 What it does mean is that Stage 1.1 and Stage 1.3 are now living in one document. Before the deadline, split them: leave the brief as the prediction plus the reasoning, and move the comparison, the $11,334, and the reflection into the Stage 1.3 memo where they are the deliverable rather than an addendum.
 
-### Your model and andrea weiss's return the same answer, and that is interesting
+### Why your answer differs from the published figures, and why that is defensible
 
-Your model recommends 10 tomatoes / 19 carrots / 28 mesclun at a profit of $16,586. So does hers, to the dollar, built independently from a different specification.
+Your model recommends 10 tomatoes / 19 carrots / 28 mesclun at a profit of $16,586. The published figures are 10 / 20 / 30 at $42,761.66. Another model in this cohort, built independently from a different specification, lands on your numbers rather than the published ones — to the dollar.
 
-That is not a coincidence and it is not copying. It follows from a modelling choice you both made: charging the farmer's full $50,000 salary and each temporary worker's full $25,000 as cash costs, in whole blocks, rather than charging only the hours actually used at a derived hourly rate. Under that convention the optimum genuinely is 10/19/28 with three workers hired, and the fourth worker destroys profit because $25,000 buys 1,440 hours to service beds worth a few hundred dollars at the margin.
+That is not a coincidence. It follows from a modelling choice the two models share: charging the farmer's full $50,000 salary and each temporary worker's full $25,000 as cash costs, in whole blocks, rather than charging only the hours actually used at a derived hourly rate. Under that convention the optimum genuinely is 10/19/28 with three workers hired, and the fourth worker destroys profit because $25,000 buys 1,440 hours to service beds worth a few hundred dollars at the margin.
 
 The course's published figures use the other convention — hours actually used, priced at $50,000 over 1,440 and $25,000 over 1,440 — which gives 10/20/30 and $42,761.66. Neither is wrong. Yours is the cash view and the course's is the economic view, and the gap between them is one of the things this case exists to surface.
 
