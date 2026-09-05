@@ -26,13 +26,13 @@ The capability is the reusable method: marginal analysis. perfect-competition is
 
 Your workbook has none. Every formula points at a coordinate.
 
-The reason the stage asks for them is not tidiness. A formula reading =BEDS_TOMATO*PRICE_PER_BED_TOM states what it means and breaks loudly if the input moves; =B5*C7 states nothing and breaks silently. Ethel Sumibcay's audit this week found two sheets of her workbook disagreeing about whether the model was feasible, and the sheet that was right was the one referencing named ranges while the one that was wrong used typed coordinates. That is the argument in one example.
+The reason the stage asks for them is not tidiness. A formula reading =BEDS_TOMATO*PRICE_PER_BED_TOM states what it means and breaks loudly if the input moves; =B5*C7 states nothing and breaks silently. An audit in this cohort this week found two sheets of the same workbook disagreeing about whether the model was feasible. The sheet that was right was the one referencing named ranges; the one that was wrong used typed coordinates. That is the argument in one example.
 
 Adding them to an existing workbook is not a rebuild — select the cell, type the name in the Name Box, then find and replace the coordinate in the formulas that use it. Your Inputs sheet is where it matters most and it is about twenty cells.
 
-### Your answer and andrea weiss's agree exactly, and it is worth knowing why
+### Why your answer differs from the published figures, and why that is defensible
 
-You both recommend 10 tomato / 19 carrot / 28 mesclun at a profit of $16,586, from independent specifications and independent workbooks.
+Your model recommends 10 tomato / 19 carrot / 28 mesclun at a profit of $16,586. Another model in this cohort, from an independent specification and an independent workbook, returns exactly the same three numbers and the same profit.
 
 It follows from a costing choice you both made: charging the farmer's full $50,000 and each temporary worker's full $25,000 as cash in whole blocks, rather than charging the hours actually used at a derived hourly rate. Under that reading 10 / 19 / 28 with three workers hired genuinely is the optimum, and the fourth worker destroys profit because $25,000 buys 1,440 hours to service beds worth a few hundred dollars at the margin. Your brief makes that argument explicitly and it is a good one.
 
