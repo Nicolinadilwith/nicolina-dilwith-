@@ -22,9 +22,14 @@ Generically, `q` denotes beds planted in crop `c`, for `c ∈ {TOMATOES, CARROTS
 |-------------------|---------:|--------:|--------:|
 | `BED_CAP[c]`      |       20 |      20 |      30 |
 | `PRICE[c]` ($/bed)|    8,800 |   2,094 |   2,700 |
-| `HRS_PER_BED[c]` (hrs/wk/bed) | 2.5 | 0.833 | 1.25 |
+| `HRS_PER_BED[c]` (hrs/wk/bed) | 2.5 | 5/6 (0.8333...) | 1.25 |
 | `FERT_COST[c]` ($/bed) |    880 |     440 |     880 |
 | `DIM_PCT[c]` (%/bed)  |     10% |    2.5% |   1.25% |
+
+Use carrots' `HRS_PER_BED` as the exact fraction `5/6`, not the rounded `0.833` a spreadsheet
+might display — at 10/20/30 beds the rounding difference alone moves total profit by about $7,
+which is the gap between an approximate and an exact match to the case's published answer
+(**10/20/30 beds, $42,761.66 profit** — see Convention A).
 
 ## Parameters — farm-wide (given)
 
