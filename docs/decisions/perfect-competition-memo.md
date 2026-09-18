@@ -16,11 +16,10 @@ evidence: analysis/perfect-competition-analysis.md
 
 1. Tomatoes stop at 10 beds, not their 20-bed cap, because marginal cost overtakes the $8,800 price right there — $8,249 at bed 10, $9,391 at bed 11. Being the highest-priced crop sets the bar; it doesn't say how many beds clear it. (See [analysis, §1](../../analysis/perfect-competition-analysis.md#1-why-tomatoes-stop-at-10-beds-despite-being-the-money-crop) for the bed-by-bed trace.)
 
-<!-- Adam's remaining things the model is trying to tell you — pick one or two more that
-actually drive the plan, each pointing at a number:
-2. Which constraints bind, and what relaxing one is worth (carrots and mesclun stop at
-   their bed caps with MC still below price — shadow prices ~$352/carrot bed, ~$246/mesclun
-   bed; the 64-bed and 4-worker caps are slack and worth $0).
+2. Carrots and mesclun stop at their bed caps, not on economics — marginal cost is still below price at bed 20 and bed 30. That makes ground itself worth something: one more carrot bed is worth $352, one more mesclun bed $246. The 64-bed cap and the 4th temp worker never bind, so neither is worth paying for. (See [analysis, §2](../../analysis/perfect-competition-analysis.md#2-which-constraints-bind-and-what-relaxing-one-is-worth) for the shadow prices.)
+
+<!-- Adam's remaining things the model is trying to tell you — pick zero or one more that
+actually drives the plan, each pointing at a number (2-3 reasons total is the target):
 3. The tomato MC dip at ~6 beds (the farmer's $34.72/hr hours run out and cheaper $17.36/hr
    temp labor takes over for a few beds, before diminishing returns win again).
 4. Why grow crops that lose money standalone (MC vs. AVC — fixed costs are sunk either way,
