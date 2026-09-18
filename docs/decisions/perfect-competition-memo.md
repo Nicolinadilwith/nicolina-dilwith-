@@ -13,10 +13,11 @@ evidence: analysis/perfect-competition-analysis.md
 **The plan.** Plant 10 / 20 / 30 so that we can maximize profit taking into account space available and labor hours.
 
 ## Why
-<!-- Adam's four things the model is trying to tell you — pick the two or three that
+
+1. Tomatoes stop at 10 beds, not their 20-bed cap, because marginal cost overtakes the $8,800 price right there — $8,249 at bed 10, $9,391 at bed 11. Being the highest-priced crop sets the bar; it doesn't say how many beds clear it. (See [analysis, §1](../../analysis/perfect-competition-analysis.md#1-why-tomatoes-stop-at-10-beds-despite-being-the-money-crop) for the bed-by-bed trace.)
+
+<!-- Adam's remaining things the model is trying to tell you — pick one or two more that
 actually drive the plan, each pointing at a number:
-1. Why tomatoes stop at ~10 beds despite being the money crop (MC crosses price: $8,249 at
-   bed 10 vs. $9,391 at bed 11, against an $8,800 price).
 2. Which constraints bind, and what relaxing one is worth (carrots and mesclun stop at
    their bed caps with MC still below price — shadow prices ~$352/carrot bed, ~$246/mesclun
    bed; the 64-bed and 4-worker caps are slack and worth $0).
