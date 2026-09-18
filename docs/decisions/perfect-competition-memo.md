@@ -21,9 +21,8 @@ evidence: analysis/perfect-competition-analysis.md
 3. Carrots and mesclun would "lose money" if you charged either one the full $20,000 of fixed cost alone — but that cost is farm-wide and gets paid whether or not a single bed gets planted, so it's the wrong test. Every carrot and mesclun bed up to the cap beats its own marginal cost, which is all that matters to the planting decision. (See [analysis, §4](../../analysis/perfect-competition-analysis.md#4-why-grow-crops-that-lose-money-on-their-own) for the AVC argument.)
 
 ## The judgment call
-<!-- Both bed caps bind, and one is worth more to relax than the other. Which ground is
-worth buying first, and what is a bed of it worth? This is where the shadow prices turn
-into advice. -->
+
+The analysis ranks carrots first: its next-bed shadow price of $352.49 beats mesclun's $246.47. But that value decays as you buy more carrot ground — $298 for a second bed, $242 for a third — and drops below mesclun's $246 by the third bed. So the right move isn't "carrots first, then mesclun" as a fixed order — it's buy carrot ground until its shadow price falls below mesclun's (about two beds), then switch, rechecking as you go rather than buying all of one crop's ground first.
 
 ## What would change my answer
 <!-- One line. Name the single variable your recommendation is most sensitive to
