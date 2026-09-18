@@ -25,5 +25,5 @@ evidence: analysis/perfect-competition-analysis.md
 The analysis ranks carrots first: its next-bed shadow price of $352.49 beats mesclun's $246.47. But that value decays as you buy more carrot ground — $298 for a second bed, $242 for a third — and drops below mesclun's $246 by the third bed. So the right move isn't "carrots first, then mesclun" as a fixed order — it's buy carrot ground until its shadow price falls below mesclun's (about two beds), then switch, rechecking as you go rather than buying all of one crop's ground first.
 
 ## What would change my answer
-<!-- One line. Name the single variable your recommendation is most sensitive to
-(e.g. a tomato price move, a fifth worker, a cap lifting). -->
+
+Mesclun's own price is the tightest lever: it only needs to rise about 4% (~$106/bed, closing the $352 vs. $246 gap) to overtake carrots as the better bed to buy, a smaller move than the ~5% carrot-price drop that would do the same — while a tomato price change, a fifth worker, or lifting either bed cap wouldn't touch this ranking at all, since neither crop's margin depends on tomatoes or on labor, which already has slack.
