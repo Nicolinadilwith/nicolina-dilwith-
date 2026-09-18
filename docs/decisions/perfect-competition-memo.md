@@ -4,13 +4,13 @@ engagement: perfect-competition
 capability: marginal-analysis
 date: 2026-09-18
 audience: "The owner-operator"
-recommendation: ""
+recommendation: "Plant 10 tomato, 20 carrot, 30 mesclun"
 evidence: analysis/perfect-competition-analysis.md
 ---
 
 # Perfect competition — recommendation
 
-**The plan.** <!-- Plant 10 / 20 / 30 — plus one sentence of reasoning a non-economist would accept. -->
+**The plan.** Plant 10 / 20 / 30 so that we can maximize profit taking into account space available and labor hours.
 
 ## Why
 
