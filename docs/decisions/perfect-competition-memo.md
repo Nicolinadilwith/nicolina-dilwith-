@@ -10,10 +10,15 @@ evidence: analysis/perfect-competition-analysis.md
 
 # Perfect competition — recommendation
 
-**Recommendation.**
+**The plan.** <!-- Plant 10 / 20 / 30 — plus one sentence of reasoning a non-economist would accept. -->
 
 ## Why
 
 ## The judgment call
+<!-- Both bed caps bind, and one is worth more to relax than the other. Which ground is
+worth buying first, and what is a bed of it worth? This is where the shadow prices turn
+into advice. -->
 
 ## What would change my answer
+<!-- One line. Name the single variable your recommendation is most sensitive to
+(e.g. a tomato price move, a fifth worker, a cap lifting). -->
