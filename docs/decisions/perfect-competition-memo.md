@@ -18,7 +18,7 @@ evidence: analysis/perfect-competition-analysis.md
 
 2. Carrots and mesclun stop at their bed caps, not on economics — marginal cost is still below price at bed 20 and bed 30. That makes ground itself worth something: one more carrot bed is worth $352, one more mesclun bed $246. The 64-bed cap and the 4th temp worker never bind, so neither is worth paying for. (See [analysis, §2](../../analysis/perfect-competition-analysis.md#2-which-constraints-bind-and-what-relaxing-one-is-worth) for the shadow prices.)
 
-3. Carrots and mesclun would "lose money" if you charged either one the full $20,000 of fixed cost alone — but that cost is farm-wide and gets paid whether or not a single bed gets planted, so it's the wrong test. Every carrot and mesclun bed up to the cap beats its own marginal cost, which is all that matters to the planting decision. (See [analysis, §4](../../analysis/perfect-competition-analysis.md#4-why-grow-crops-that-lose-money-on-their-own) for the AVC argument.)
+3. Carrots and mesclun would "lose money" if you charged either one the full $20,000 of fixed cost alone — but that cost is farm-wide and gets paid whether or not a single bed gets planted, so it's the wrong test. Every carrot and mesclun bed up to the cap beats its own marginal cost, which is all that matters to the planting decision. (See [analysis, §3](../../analysis/perfect-competition-analysis.md#3-why-grow-crops-that-lose-money-on-their-own) for the AVC argument.)
 
 ## The judgment call
 <!-- Both bed caps bind, and one is worth more to relax than the other. Which ground is

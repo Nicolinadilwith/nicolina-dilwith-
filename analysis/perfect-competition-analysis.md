@@ -27,11 +27,7 @@ Carrots and mesclun are cap-limited: their marginal cost is still comfortably be
 
 The other two constraints in the model, total beds (64) and temp labor hours (4 workers × 1,440 hrs = 5,760 hrs) both sit with slack at the optimum: 60 of 64 beds used, and about 5,277 of 5,760 labor-hours used (~483 hours to spare). Neither is what's stopping any crop, so their shadow price is $0. Paying for a bigger plot or a 5th temp worker wouldn't change the plan or the profit at all.
 
-## 3. A note on the tomato "MC dip" framing
-
-Adam's teaching example describes tomato marginal cost dipping around bed 6 as if the farmer's own hours are priced continuously at her $34.72/hr opportunity cost rather than treated as sunk — under that framing, marginal cost genuinely falls once cheaper $17.36/hr temp labor takes over past bed 5. That's not what this workbook computes: Convention A treats the farmer's first 720 hours as already paid for by her flat $25,000 labor cost, so using one more of them is free at the margin — flat $880 for beds 1–4, then a step up (not a dip) at bed 6. The two framings differ on whether her time is a sunk cost or a true per-hour opportunity cost; this model uses the former.
-
-## 4. Why grow crops that lose money on their own
+## 3. Why grow crops that lose money on their own
 
 MC stayed below price at every single carrot bed (through 20) and every mesclun bed (through 30). Since average variable cost is just the average of all those per-bed marginal costs, and every one of them stays below price, AVC must stay below price too. You can't average a column of numbers that are all below a line and land above it. That's the short-run shutdown rule directly: produce as long as price covers AVC, because the fixed cost gets paid either way.
 
