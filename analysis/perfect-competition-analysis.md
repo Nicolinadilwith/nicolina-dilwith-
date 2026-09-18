@@ -23,7 +23,13 @@ Bed 9 costs about $7,244 to add (`Marginal Analysis!I17`) — still comfortably 
 
 That's the whole mechanism of P = MC for a price-taking producer: price is fixed by the market and acts as marginal revenue, so the profit-maximizing quantity is wherever the rising marginal-cost curve meets that fixed price line — not wherever revenue-per-unit happens to be highest. Carrots make the contrast obvious: their price is only $2,094 (`Inputs!C26`), a quarter of tomatoes', but because their diminishing-returns rate is so much gentler (2.5% vs 10%), their marginal cost is still comfortably below price even at bed 20, the cap (`Marginal Analysis!I32`). Carrots aren't stopped by economics at all — they're stopped by running out of allowed ground (the sheet even prices bed 21 at roughly $353 of profit it's leaving on the table, `Marginal Analysis!K33`). Tomatoes are the mirror image: high price, but a marginal cost curve that outruns even that high price by bed 11, so they're self-limiting well inside their cap. Being the best per-bed earner sets how high the bar is; it says nothing about how many beds it's worth clearing that bar for.
 
-## 2. Which constraints bind, and what relaxing one is worth
+## 2. The tomato MC dip at ~bed 6, and why it's not a spreadsheet error
+
+Marginal cost doesn't just climb through bed 11 — it climbs, dips, then climbs again. Charging the farmer's own hours at her $34.72/hr opportunity cost (`Inputs!B15`) instead of treating them as free at the margin, beds 1–5 climb steeply, driven by the expensive farmer rate: $4,317.50 → $5,005.00 → $5,795.63 → $6,703.13 → $7,660.86 (`Marginal Analysis!I9:I13`). Then bed 6 falls to $4,906.28 (`Marginal Analysis!I14`) once every hour of that bed is priced at the cheaper $17.36/hr temp rate instead (`Inputs!B20`) — a genuine wage-driven dip — before diminishing returns push it back up through the same bed 7–11 path already traced in Finding 1. Both segments agree from bed 6 onward; they only disagree on beds 1–5, since that's the only range where the farmer's own hours are actually in play.
+
+Diminishing returns never paused here — hours per bed keep rising the whole way (`Marginal Analysis!D9:D14`, the Marginal hours column). What changed is the price of the marginal hour, not the physical returns: the farmer's 720 free field hours (`Inputs!B14`) run out partway through bed 5, cheaper temp labor takes over, and for one bed that wage drop outweighs the extra hours needed. An analysis that treated MC as rising monotonically would have missed this.
+
+## 3. Which constraints bind, and what relaxing one is worth
 
 Carrots and mesclun are cap-limited (Figure 2): their marginal cost is still comfortably below price at the last bed the cap allows (bed 20 for carrots, `Marginal Analysis!I32`; bed 30 for mesclun, `Marginal Analysis!I44`), so nothing in the economics tells them to stop, just the 20-bed and 30-bed caps (`Inputs!B26`, `Inputs!B27`).
 
@@ -33,7 +39,7 @@ Bed 21 of carrots would earn $352.49 in profit (`Marginal Analysis!K33`), bed 31
 
 The other two constraints in the model, total beds (64, `Inputs!B5`) and temp labor hours (4 workers × 1,440 hrs = 5,760 hrs, `P&L!B13`) both sit with slack at the optimum: 60 of 64 beds used (`Solver Model!B7`), and about 5,277 of 5,760 labor-hours used (`P&L!B9`, ~483 hours to spare). Neither is what's stopping any crop, so their shadow price is $0. Paying for a bigger plot or a 5th temp worker wouldn't change the plan or the profit at all.
 
-## 3. Why grow crops that lose money on their own
+## 4. Why grow crops that lose money on their own
 
 MC stayed below price at every single carrot bed (through 20) and every mesclun bed (through 30) — the "Profitable?" column reads "Yes" the whole way (`Marginal Analysis!L28:L33`, `Marginal Analysis!L40:L45`). Since average variable cost is just the average of all those per-bed marginal costs, and every one of them stays below price, AVC must stay below price too. You can't average a column of numbers that are all below a line and land above it. That's the short-run shutdown rule directly: produce as long as price covers AVC, because the fixed cost gets paid either way.
 
