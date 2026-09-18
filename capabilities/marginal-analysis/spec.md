@@ -22,9 +22,14 @@ Generically, `q` denotes beds planted in crop `c`, for `c ∈ {TOMATOES, CARROTS
 |-------------------|---------:|--------:|--------:|
 | `BED_CAP[c]`      |       20 |      20 |      30 |
 | `PRICE[c]` ($/bed)|    8,800 |   2,094 |   2,700 |
-| `HRS_PER_BED[c]` (hrs/wk/bed) | 2.5 | 0.833 | 1.25 |
+| `HRS_PER_BED[c]` (hrs/wk/bed) | 2.5 | 5/6 (0.8333...) | 1.25 |
 | `FERT_COST[c]` ($/bed) |    880 |     440 |     880 |
 | `DIM_PCT[c]` (%/bed)  |     10% |    2.5% |   1.25% |
+
+Use carrots' `HRS_PER_BED` as the exact fraction `5/6`, not the rounded `0.833` a spreadsheet
+might display — at 10/20/30 beds the rounding difference alone moves total profit by about $7,
+which is the gap between an approximate and an exact match to the case's published answer
+(**10/20/30 beds, $42,761.66 profit** — see Convention A).
 
 ## Parameters — farm-wide (given)
 
@@ -35,15 +40,17 @@ Generically, `q` denotes beds planted in crop `c`, for `c ∈ {TOMATOES, CARROTS
 - `FARMER_FIELD_SHARE = 50%`
 - `FARMER_FIELD_HOURS = FARMER_TOTAL_HOURS × FARMER_FIELD_SHARE = 720` hrs — the farmer's own
   field labor capacity, already paid for by her salary
-- `FARMER_RATE = FARMER_SALARY / FARMER_TOTAL_HOURS ≈ $34.72/hr` — an implied rate for reference;
-  it is never multiplied against anything in Convention A below, since her salary is a fixed cost
-  regardless of hours worked
+- `FARMER_RATE = FARMER_SALARY / FARMER_TOTAL_HOURS ≈ $34.72/hr` — her implied hourly rate,
+  multiplied against her field hours in Convention A below to get the labor cost the crop P&L
+  actually carries (see Convention A step 2) — not her full salary
 - `TEMP_WORKER_HOURS = 1,440` hrs per worker per season
-- `TEMP_WORKER_COST = $25,000` per worker per season — a discrete block, not a per-hour rate
-- `TEMP_RATE = TEMP_WORKER_COST / TEMP_WORKER_HOURS ≈ $17.36/hr` — an implied rate, used
-  continuously only in Convention B and the isolated-crop marginal-cost check below; never used as
-  a continuous rate in Convention A's cash cost
-- `MAX_TEMP_WORKERS = 4`
+- `TEMP_WORKER_COST = $25,000` per worker per season
+- `TEMP_RATE = TEMP_WORKER_COST / TEMP_WORKER_HOURS ≈ $17.36/hr` — the continuous per-hour rate
+  temp labor is costed at in Convention A; temp labor is bought by the hour, not hired in discrete
+  worker-sized blocks (see Convention A step 3)
+- `MAX_TEMP_WORKERS = 4` — caps how many hours of temp labor are available at all:
+  `MAX_TEMP_HOURS = MAX_TEMP_WORKERS × TEMP_WORKER_HOURS = 5,760` hrs. This bounds capacity, not
+  cost — see Constraints.
 - `FIXED_COSTS_OTHER = $20,000` /season — non-labor overhead
 
 ## The engine: labor-hours formula
@@ -74,26 +81,27 @@ this model.
 
 This is what the optimizer maximizes. Labor capacity is filled in a fixed order: **the farmer's
 own hours are consumed first, always**, and that allowance is a farm-wide resource — not a
-per-crop allotment.
+per-crop allotment. Both the farmer's hours and temp hours are priced continuously, per hour —
+neither is a lump paid regardless of how much of it is used.
 
 1. `TOTAL_LABOR_HRS = Σ_c LABOR_HRS(q_c, c)` — summed across all three crops.
-2. `FREE_HRS_USED = MIN(TOTAL_LABOR_HRS, FARMER_FIELD_HOURS)`
-3. `PAID_HRS_NEEDED = MAX(0, TOTAL_LABOR_HRS − FARMER_FIELD_HOURS)`
-4. `WORKERS_NEEDED = ROUNDUP(PAID_HRS_NEEDED / TEMP_WORKER_HOURS, 0)` — temp workers are hired in
-   whole, discrete blocks of `TEMP_WORKER_HOURS`, never fractionally and never continuously by the
-   hour.
-5. `WORKERS_HIRED = WORKERS_NEEDED`, subject to `WORKERS_HIRED ≤ MAX_TEMP_WORKERS` — a hard
-   feasibility constraint on the plan (see Constraints), not a cap that silently discards need.
-6. `TEMP_LABOR_COST = WORKERS_HIRED × TEMP_WORKER_COST` — a step function of `TOTAL_LABOR_HRS`,
-   not `PAID_HRS_NEEDED × TEMP_RATE`. Hiring a worker costs the full block whether she is needed
-   for 1 hour or 1,440.
+2. `FREE_HRS_USED = MIN(TOTAL_LABOR_HRS, FARMER_FIELD_HOURS)`, and the farm's cost for it is
+   `FARMER_LABOR_COST = FREE_HRS_USED × FARMER_RATE`. In every plan worth evaluating, total demand
+   exceeds 720 hours, so this is `FARMER_FIELD_HOURS × FARMER_RATE = $25,000` — the value of her
+   field labor at her own implied rate, not her full $50,000 salary. Her salary pays for 1,440
+   hours of which only half are field hours; only the field-labor half is a cost of growing crops,
+   the other half is outside this P&L.
+3. `PAID_HRS_NEEDED = MAX(0, TOTAL_LABOR_HRS − FARMER_FIELD_HOURS)` — hours beyond the farmer's
+   free allowance, bought continuously by the hour at `TEMP_RATE`, not hired in discrete
+   worker-sized blocks.
+4. `TEMP_LABOR_COST = PAID_HRS_NEEDED × TEMP_RATE`.
 
 Then:
 
 ```
 REVENUE    = Σ_c q_c × PRICE[c]
 FERTILIZER = Σ_c q_c × FERT_COST[c]
-PROFIT_A   = REVENUE − FERTILIZER − FARMER_SALARY − TEMP_LABOR_COST − FIXED_COSTS_OTHER
+PROFIT_A   = REVENUE − FERTILIZER − FARMER_LABOR_COST − TEMP_LABOR_COST − FIXED_COSTS_OTHER
 ```
 
 `PROFIT_A` is the objective function.
@@ -105,8 +113,8 @@ The blend is a **farm-level fact** — one rate for the whole farm, computed onc
 recomputed per crop.
 
 ```
-TOTAL_LABOR_$          = FARMER_SALARY + TEMP_LABOR_COST        (same cash as Convention A)
-TOTAL_LABOR_HRS_BOUGHT = FARMER_FIELD_HOURS + (WORKERS_HIRED × TEMP_WORKER_HOURS)
+TOTAL_LABOR_$          = FARMER_LABOR_COST + TEMP_LABOR_COST    (same cash as Convention A)
+TOTAL_LABOR_HRS_BOUGHT = FREE_HRS_USED + PAID_HRS_NEEDED         (= TOTAL_LABOR_HRS)
 BLENDED_RATE            = TOTAL_LABOR_$ / TOTAL_LABOR_HRS_BOUGHT
 ```
 
@@ -126,8 +134,9 @@ Convention A optimization.
 
 - `0 ≤ q_c ≤ BED_CAP[c]` for each crop, integer.
 - `Q_TOMATOES + Q_CARROTS + Q_MESCLUN ≤ TOTAL_BED_CAP`
-- `WORKERS_NEEDED ≤ MAX_TEMP_WORKERS` — a plan requiring more than 4 temp workers is infeasible,
-  not merely more expensive.
+- `PAID_HRS_NEEDED ≤ MAX_TEMP_HOURS` (5,760 hrs) — a plan needing more temp labor than that is
+  infeasible, not merely more expensive. This bounds available hours; it says nothing about how
+  those hours are priced (see Convention A).
 
 ## Objective
 
@@ -141,21 +150,21 @@ other bed to bed:
 1. **Compounding labor requirement.** `LABOR_HRS(q, c) − LABOR_HRS(q−1, c)` grows with `q` because
    of the `(1 + DIM_PCT[c])^q` term — each additional bed needs more marginal hours than the one
    before it, in isolation.
-2. **Discrete labor-supply steps.** Whether those marginal hours cost anything in cash depends on
-   whether the farm-wide 720-hour free allowance is already exhausted, and whether the current
-   temp-worker block (1,440 hrs, $25,000) still has slack in it. A bed that lands just after a new
-   worker is hired can be nearly free at the margin (the block is already paid for); a bed that
-   lands just as a block runs out triggers the next full $25,000 step.
+2. **A one-time price change in the marginal hour, not a recurring one.** Every hour up to
+   `FARMER_FIELD_HOURS` (720, farm-wide) is already paid for — the farmer's field-labor cost is a
+   flat `$25,000` regardless of how those hours are split across crops — so a bed drawing on that
+   allowance costs only its fertilizer at the margin. Once the farm-wide total crosses 720 hours,
+   every additional hour costs `TEMP_RATE` (~$17.36/hr) continuously — there is no further step,
+   because temp labor is bought by the hour, not hired in worker-sized blocks (see Convention A).
+   So the marginal price of labor drops once, from the farmer's flat allowance to a continuous paid
+   rate, and stays there.
 
-Mechanism 2 is a step function and mechanism 1 is smooth and compounding, so their sum is **not
-guaranteed to rise monotonically** — do not hardcode or assume "marginal cost increases with `q`"
-anywhere in the model or its checks. Derive `PROFIT_A(q) − PROFIT_A(q−1)` from the formulas above
-and let the shape fall out empirically, per crop, before drawing conclusions about where a crop
-stops being profitable at the margin.
-
-An isolated-crop marginal-cost view — each crop evaluated as if it alone had first claim on the
-full 720 free hours, with temp hours costed continuously at `TEMP_RATE` rather than in discrete
-blocks — is useful for auditing the engine formula in isolation (e.g. a hand-calculated check at
-`q = 1`), but it is not Convention A and must not be mistaken for the farm's real per-crop cost:
-the free hours and the temp-worker blocks are shared, farm-level resources, consumed once across
-all three crops together.
+Mechanism 1 pushes marginal cost up throughout; mechanism 2 produces one drop when the farmer's
+free hours run out mid-crop, not a repeating one. Their sum is **not guaranteed to rise
+monotonically** near that crossing point — do not hardcode or assume "marginal cost increases with
+`q`" anywhere in the model or its checks. Derive `PROFIT_A(q) − PROFIT_A(q−1)` from the formulas
+above and let the shape fall out empirically, per crop, before drawing conclusions about where a
+crop stops being profitable at the margin. Because labor is priced continuously with no discrete
+worker-block steps, a crop's own marginal cost crossing its price is a real, decisive signal in
+this model — unlike a lumpy-labor version of the model, there is no separate "not worth hiring a
+whole extra block for a few more beds" effect layered on top.
