@@ -50,6 +50,8 @@ The 7 tomatoes / 18 carrots / 22 mesclun = 47 beds (17 idle) figure is the pre-a
 
 The model's actual recommendation is 10 tomatoes / 20 carrots / 30 mesclun = 60 of 64 beds (only 4 idle), profit $42,762.
 
+![Beds planted: hypothesis vs. recommendation](../../analysis/figures/fig2-hypothesis-vs-recommendation.png)
+
 How I know I was wrong:
 
 Recomputing the hypothesis's own numbers: at 7/18/22, the farm needs about 2,651 hours of temp labor against a 5,760-hour cap — nowhere near a point where any crop's next bed costs more than it earns (we know that because the model shows 13 more beds were worth planting). This guess was too conservative on every crop, leaving $8,529 on the table ($42,762 − $34,233). It wasn't derived from either mechanism — it was an intuitive guess that turned out to undershoot.
