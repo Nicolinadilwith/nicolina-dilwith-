@@ -37,6 +37,25 @@ rate, year by year, to see whether my business's deceleration pattern tracks the
 (support for "this is a broad, cohort-driven normalization, not something specific to me or my
 business decisions") or diverges from it in a way that needs its own explanation.
 
+**Hawaii/Oahu unemployment rate, annual.** For the sustainability question — checking whether my
+plateau lined up with a weakening local economy or happened despite a strengthening one.
+Best sources: Hawaii DBEDT's own data (https://dbedt.hawaii.gov/economic/unemployment-statistics/)
+and/or FRED's Honolulu County series, which is Oahu-specific rather than statewide
+(https://fred.stlouisfed.org/series/LAUCN150030000000003A). Approximate figures found so far:
+statewide annual average ~3.3% (2022), ~3.0% (2023), ~3.1% (2024), ~2.5% (2025) — a tightening
+labor market across the whole window my growth plateaued, which argues against the plateau being
+explained by a weakening economy. **NOT YET VERIFIED against the primary page** — same tool
+limitation as before (BLS/FRED domains are blocked for my direct fetch); I need to check the
+DBEDT or FRED page myself before using these numbers.
+
+**Mainland high-end daycare pricing benchmark.** For the pricing/positioning question — comparing
+my own day rate against what premium mainland facilities charge. New York: $40–60/day generally,
+Manhattan $50–70/day (https://www.rover.com/blog/new-york-city-ny-doggy-day-care-price/). Los
+Angeles: premium facilities $45–59/day
+(https://www.dogdrop.co/blog/how-much-does-dog-daycare-cost). San Francisco: average $56.42/day
+(https://www.rover.com/blog/san-francisco-ca-doggy-day-care-price/). **NOT YET VERIFIED** — same
+caveat; I need to check these pages myself before citing them in the paper.
+
 ## Figures planned
 
 [What chart(s) you'll build, what claim each one is evidence for, and why the paper would be
