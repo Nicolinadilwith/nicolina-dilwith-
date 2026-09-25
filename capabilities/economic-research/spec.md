@@ -18,10 +18,13 @@ $147B), +3.4% (2024, to $152B), +3.7% (2025, to $158B).
 Source: https://americanpetproducts.org/news/the-american-pet-products-association-appa-releases-2025-state-of-the-industry-report
 
 I considered a category-specific series ("other services": grooming, boarding, dog walking,
-training, pet sitting) as a closer match to my own business, but I'm rejecting it — that bucket
-is too broad, since it's lumped in with things like pet insurance that have nothing to do with
-daycare demand specifically. Its growth could be driven by a completely different segment inside
-the bucket, so it isn't a clean proxy. The aggregate figure is the one I'm using.
+training, pet sitting) as a closer match to my own business. It broadly moves in the same
+direction as the aggregate figure (20% → 7.9% → 5.7%, then also ticking back up in 2025), so it's
+soft corroboration, not a contradiction. But I'm not using it as primary evidence — the bucket is
+still too broad, lumped in with things like pet insurance that have nothing to do with daycare
+demand specifically, so its growth could be driven by a completely different segment inside it.
+The aggregate figure is the one I'm building the comparison on; the category series is mentioned,
+not relied on.
 
 2025's growth did tick back up slightly from 2024 (3.4% to 3.7%), which could look like the
 deceleration reversing. It isn't: 2025's 3.7% is still barely a third of 2022's 10.8%. A small
