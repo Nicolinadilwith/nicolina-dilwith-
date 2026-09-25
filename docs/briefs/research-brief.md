@@ -33,7 +33,27 @@ dog-friendliness.
 
 ## Link to course economics
 
-[Which micro and/or macro concepts, by name, will do the explaining?]
+Two microeconomic concepts do most of the explaining here.
+
+The first is income elasticity of demand. Dog daycare, especially a high-end version with field
+trips and trained staff, is a discretionary service — one of the first things a household cuts
+when money gets tight. That cuts both ways in this story: it's part of why demand collapsed at
+the start of the pandemic, when many potential clients had their hours cut or were laid off, not
+just because people were suddenly home to watch their own dogs. It's also a forward-looking risk
+layered on top of the cohort question — any future recession or local downturn would hit a
+business like mine harder than one selling necessities, and that exposure is separate from (and
+could compound) the COVID-cohort demand fading on its own.
+
+The second is market structure, specifically barriers to entry. Land is scarce and expensive in
+Hawaii, and that constrains every daycare operator here, not just me — it's genuinely hard for
+anyone to expand into a facility with enough room for dogs to run and play. Fewer competitors
+able to offer that kind of space could mean more pricing power for the operators who already
+have it. But that runs against the infrastructure gap described above: Hawaii also lacks the
+dog-friendly retail and cafe districts that support high willingness-to-pay for premium pet care
+on the mainland — a complementary-goods gap that suppresses demand regardless of how few
+competitors exist. Those two forces point in opposite directions on price — fewer competitors
+pushes it up, missing demand-side infrastructure pushes it down — and the analysis needs to say
+which one actually wins here, rather than assuming either one decides it automatically.
 
 ## Planned analysis
 
