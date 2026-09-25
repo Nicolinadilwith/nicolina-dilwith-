@@ -1,8 +1,6 @@
-<!-- Stage: Ask. This is the challenge in your own words, the economic concepts it touches,
-     and the analysis you plan to run — written by you, not drafted by AI (see AGENTS.md).
-     Replace each bracketed line below; delete this comment when the brief is done. -->
+# A Post-COVID Fading Boom: Cohort-Driven Demand and the Limits of Premium Pricing in Hawaii's Dog Daycare Market
 
-# [Working title] Research Brief
+Research brief
 
 ## The challenge
 
