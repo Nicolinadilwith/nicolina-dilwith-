@@ -33,7 +33,7 @@ dog-friendliness.
 
 ## Link to course economics
 
-Two microeconomic concepts do most of the explaining here.
+Three microeconomic concepts do most of the explaining here.
 
 The first is income elasticity of demand. Dog daycare, especially a high-end version with field
 trips and trained staff, is a discretionary service — one of the first things a household cuts
@@ -48,12 +48,21 @@ The second is market structure, specifically barriers to entry. Land is scarce a
 Hawaii, and that constrains every daycare operator here, not just me — it's genuinely hard for
 anyone to expand into a facility with enough room for dogs to run and play. Fewer competitors
 able to offer that kind of space could mean more pricing power for the operators who already
-have it. But that runs against the infrastructure gap described above: Hawaii also lacks the
-dog-friendly retail and cafe districts that support high willingness-to-pay for premium pet care
-on the mainland — a complementary-goods gap that suppresses demand regardless of how few
-competitors exist. Those two forces point in opposite directions on price — fewer competitors
-pushes it up, missing demand-side infrastructure pushes it down — and the analysis needs to say
-which one actually wins here, rather than assuming either one decides it automatically.
+have it.
+
+The third is a difference in tastes and preferences, a basic demand-curve shifter. The missing
+dog-friendly infrastructure in Hawaii — no walkable retail or cafe districts built around dogs
+the way many mainland cities have — isn't really the cause of weaker demand for premium pet care
+here; it's a symptom of it. Dogs simply aren't as high a priority for many people in Hawaii as
+they are on the mainland, where dogs are treated more like family members deserving of "bougie"
+treatment. That's one underlying difference in preferences showing up in two places — the lack
+of built infrastructure and lower willingness to pay for a service like mine — not two separate
+causes.
+
+The second and third concepts point in opposite directions on price: fewer competitors (market
+structure) pushes it up, but a market where dogs are a lower cultural priority (tastes and
+preferences) pushes willingness to pay down. The analysis needs to say which one actually wins
+here, rather than assuming either one decides it automatically.
 
 ## Planned analysis
 
