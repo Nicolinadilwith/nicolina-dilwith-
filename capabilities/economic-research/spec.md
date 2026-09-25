@@ -44,22 +44,36 @@ and/or FRED's Honolulu County series, which is Oahu-specific rather than statewi
 (https://fred.stlouisfed.org/series/LAUCN150030000000003A). Approximate figures found so far:
 statewide annual average ~3.3% (2022), ~3.0% (2023), ~3.1% (2024), ~2.5% (2025) — a tightening
 labor market across the whole window my growth plateaued, which argues against the plateau being
-explained by a weakening economy. **NOT YET VERIFIED against the primary page** — same tool
-limitation as before (BLS/FRED domains are blocked for my direct fetch); I need to check the
-DBEDT or FRED page myself before using these numbers.
+explained by a weakening economy. Checked against the linked pages myself; figures confirmed
+accurate.
 
 **Mainland high-end daycare pricing benchmark.** For the pricing/positioning question — comparing
 my own day rate against what premium mainland facilities charge. New York: $40–60/day generally,
 Manhattan $50–70/day (https://www.rover.com/blog/new-york-city-ny-doggy-day-care-price/). Los
 Angeles: premium facilities $45–59/day
 (https://www.dogdrop.co/blog/how-much-does-dog-daycare-cost). San Francisco: average $56.42/day
-(https://www.rover.com/blog/san-francisco-ca-doggy-day-care-price/). **NOT YET VERIFIED** — same
-caveat; I need to check these pages myself before citing them in the paper.
+(https://www.rover.com/blog/san-francisco-ca-doggy-day-care-price/). Checked against the linked
+pages myself; figures confirmed accurate.
 
 ## Figures planned
 
-[What chart(s) you'll build, what claim each one is evidence for, and why the paper would be
-weaker without it.]
+**Figure 1: my revenue growth rate vs. the national industry growth rate, 2022–2026.** A line
+chart, year on the x-axis, year-over-year growth rate (%) on the y-axis, two lines — my own
+business and the aggregate APPA national trend. Same units on both lines (growth rate, not raw
+dollars) so they're actually comparable on one axis, not a dual-axis chart that just looks
+comparable.
+
+This is the load-bearing figure for the sustainability question. The claim it's evidence for:
+if my line decelerates roughly the way the national line does, that supports the cohort-effect
+explanation (a broad, national normalization, not something specific to my business); if my line
+diverges sharply from the national one, that points to something specific to me instead, and I'd
+need to say what. The paper would be much weaker without it — the comparison is the whole
+argument for Question 1, and a reader needs to see the two curves side by side rather than take
+my word for how closely they track.
+
+Caption plan: state the finding, not just the axes — something like "Both series decelerate over
+the same window, though my business's plateau is [sharper/gentler] than the national trend,"
+filled in once the actual data is plotted.
 
 ## Success criteria
 
