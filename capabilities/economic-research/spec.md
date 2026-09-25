@@ -75,6 +75,19 @@ Caption plan: state the finding, not just the axes — something like "Both seri
 the same window, though my business's plateau is [sharper/gentler] than the national trend,"
 filled in once the actual data is plotted.
 
+**Figure 2: my day rate vs. mainland high-end benchmarks.** A bar chart — one bar for my own
+rate, one bar each for the New York, Los Angeles, and San Francisco premium-facility figures
+(using the midpoint or a representative value from each range, not the widest end of it).
+
+This is the evidence for the pricing/positioning question: it makes the size of the gap between
+Hawaii and mainland premium pricing visible directly, instead of asking the reader to hold four
+numbers in their head from a sentence. It also sets up the recommendation — whatever pricing
+strategy I argue for has to make sense in light of how big that gap actually is, not a vague
+sense that "mainland is more expensive."
+
+Caption plan: state the size of the gap as a finding, e.g. "My rate sits $X below the mainland
+premium average, a gap of Y%," filled in once the numbers are finalized.
+
 ## Success criteria
 
 [What has to be true for this paper to be finished and good — stated as checkable claims, not
