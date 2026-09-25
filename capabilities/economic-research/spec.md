@@ -17,36 +17,22 @@ Aggregate national pet-industry spending growth by year: roughly +10.8% (2022), 
 $147B), +3.4% (2024, to $152B), +3.7% (2025, to $158B).
 Source: https://americanpetproducts.org/news/the-american-pet-products-association-appa-releases-2025-state-of-the-industry-report
 
-The more relevant series — the "other services" category (grooming, boarding, dog walking,
-training, pet sitting), which is the actual category my business sits in rather than the whole
-pet industry lumped together:
+I considered a category-specific series ("other services": grooming, boarding, dog walking,
+training, pet sitting) as a closer match to my own business, but I'm rejecting it — that bucket
+is too broad, since it's lumped in with things like pet insurance that have nothing to do with
+daycare demand specifically. Its growth could be driven by a completely different segment inside
+the bucket, so it isn't a clean proxy. The aggregate figure is the one I'm using.
 
-| Year | Spending | YoY growth |
-|------|---------|-----------|
-| 2022 | $11.4B  | +20%       |
-| 2023 | $12.3B  | +7.9%      |
-| 2024 | $13.0B  | +5.7%      |
-| 2025 | $14.3B  | +10.0%     |
+2025's growth did tick back up slightly from 2024 (3.4% to 3.7%), which could look like the
+deceleration reversing. It isn't: 2025's 3.7% is still barely a third of 2022's 10.8%. A small
+uptick within an overall decline of that size doesn't undercut the deceleration story — it's
+worth stating that comparison explicitly in the paper so a reviewer doesn't raise the same
+objection I did before I'd worked through it.
 
-Sources: https://todaysveterinarybusiness.com/us-pet-spending-appa-090423/ (2022) and APPA's own
-2023/2025 releases (2023–2025):
-https://americanpetproducts.org/news/u.s.-pet-industry-reaches-147-billion-in-sales-in-2023 ,
-https://americanpetproducts.org/news/u.s.-pet-industry-reaches-158-billion-in-2025-poised-for-continued-growth-in-2026
-
-Two open items I still need to decide, not data problems but interpretation calls:
-
-1. The category label isn't worded identically across every year's report ("other services" vs.
-   "grooming, boarding, training and other services") — I should check whether APPA changed what's
-   bucketed into it before treating the four years as a clean apples-to-apples series.
-2. Growth in this category ticks back up to 10% in 2025 after falling to 5.7% in 2024 — it doesn't
-   decelerate as cleanly as the aggregate industry number does. I need to either explain that uptick
-   or be upfront that my own business's numbers are the real evidence and this series is supporting
-   context, not a perfect national mirror of my situation.
-
-The plan: line up my own year-over-year revenue growth rate against this category's national growth
-rate, year by year, to see whether my business's pattern tracks the national one (support for "this
-is a broad, cohort-driven normalization, not something specific to me or my business decisions") or
-diverges from it in a way that needs its own explanation.
+The plan: line up my own year-over-year revenue growth rate against this aggregate national growth
+rate, year by year, to see whether my business's deceleration pattern tracks the national one
+(support for "this is a broad, cohort-driven normalization, not something specific to me or my
+business decisions") or diverges from it in a way that needs its own explanation.
 
 ## Figures planned
 
