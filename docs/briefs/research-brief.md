@@ -66,7 +66,22 @@ here, rather than assuming either one decides it automatically.
 
 ## Planned analysis
 
-[What data will you use, what will you compare, and what's the analysis you intend to run?]
+For the sustainability question, I'll compare my own annual revenue and enrollment totals
+(2022–2026) against Hawaii's annual unemployment rate over the same period and against the
+national pet-industry spending growth trend (APPA's State of the Industry data). If my plateau
+lines up with a weakening local economy, that supports the income-elasticity explanation; if it
+happened anyway while the local economy was strengthening, that points instead to the
+cohort-effect explanation. I'll also use average dog lifespan (10–13 years) to estimate roughly
+how much longer the COVID-cohort effect should keep fading before it fully plays out.
+
+For the pricing question, I'll compare my own day rate against published high-end mainland
+daycare rates (San Francisco, Los Angeles, New York) as a benchmark for how far Hawaii sits below
+mainland premium pricing. For the market-structure side of the tension, I'm not going to chase a
+precise land-cost comparison against a specific mainland city — mainland land prices vary too
+much across the country for a single comparison to mean much. I'll treat it as the well-known
+fact that it is — Hawaii's land and commercial real estate costs are among the highest in the
+country — and weigh that qualitatively against the tastes-and-preferences side of the tension
+rather than trying to force a number onto it.
 
 ## Hypothesis
 
