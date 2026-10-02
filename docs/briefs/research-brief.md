@@ -94,9 +94,11 @@ dogs, rather than a lasting shift in how people care for their dogs — and I ex
 off as that generation is gradually replaced.
 
 Separately, and on a longer time horizon, I believe Hawaii lags behind the mainland in pricing
-and positioning because it lacks the dog-friendly infrastructure — walkable retail and cafe
-districts that welcome dogs — that many mainland cities have developed. That gap is independent
-of the pandemic-driven boom and will not close simply because the boom itself is fading.
+and positioning because dogs simply aren't as high a cultural priority for many people here as
+they are on the mainland — the same difference in tastes and preferences from the economics
+section above. The missing dog-friendly infrastructure (walkable retail and cafe districts that
+welcome dogs) is a symptom of that difference, not its cause. That gap is independent of the
+pandemic-driven boom and will not close simply because the boom itself is fading.
 
 > **Note, added after pulling my own pricing data:** the pricing half of this hypothesis was
 > wrong, and the real finding is more specific than "Hawaii lags." My own day rate ($75) is
