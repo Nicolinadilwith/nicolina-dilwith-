@@ -194,5 +194,29 @@ there's little pulling my price back down toward either band."
 
 ## Success criteria
 
-[What has to be true for this paper to be finished and good — stated as checkable claims, not
-just "write a good paper."]
+Checkable claims, not vague goals:
+
+- [ ] The "why now" claim (plateauing growth, a decision I actually need to make) appears in the
+  first paragraph, not buried after the COVID backstory.
+- [ ] All three named concepts (income elasticity of demand, market structure/barriers to entry,
+  tastes and preferences) are each used by name at least once, tied to a specific claim — not
+  just defined in the abstract.
+- [ ] The timing lag (my 2020 trough / 2022–2023 boom vs. the national 2020–2021 rise) is stated
+  explicitly as mechanism evidence, not left for the reader to notice on their own in Figure 1.
+- [ ] The pricing reversal (my rate above mainland premium, not below it) is addressed head-on in
+  the text, including that it updates the brief's original assumption — not quietly dropped or
+  smoothed over.
+- [ ] The recommendation is one coherent strategy that accounts for both findings together (demand
+  normalizing on a timeline + pricing power from scarcity), not two separate, unconnected points.
+- [ ] The recommendation explicitly states and answers its strongest objection.
+- [ ] Both figures are captioned with the actual finding stated in words, not just axis labels,
+  and each one is referenced by the sentence in the text it's evidence for.
+- [ ] Every number that came from me (not sourced externally) is clearly my own data; every
+  number that came from an external source has been checked by me against the actual page, not
+  just a search summary.
+- [ ] No business name, repo URL, or other identifying information appears anywhere in the body
+  of the paper.
+- [ ] Citations and bibliography are in one consistent style (APA, MLA, or Chicago).
+- [ ] `prompt-log.md` closes with a reflection naming where AI helped, where it got something
+  wrong or oversimplified, and how I verified it (the Hawaii-unemployment false lead and the
+  dollar-sign chart-rendering bug are both real candidates).
