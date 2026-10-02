@@ -122,16 +122,37 @@ accurate.
 
 **Mainland high-end daycare pricing benchmark.** For the pricing/positioning question — comparing
 my own day rate against what premium mainland facilities charge. New York: $40–60/day generally,
-Manhattan $50–70/day (https://www.rover.com/blog/new-york-city-ny-doggy-day-care-price/). Los
-Angeles: premium facilities $45–59/day
+Manhattan $50–70/day, midpoint $60 (https://www.rover.com/blog/new-york-city-ny-doggy-day-care-price/).
+Los Angeles: premium facilities $45–59/day, midpoint $52
 (https://www.dogdrop.co/blog/how-much-does-dog-daycare-cost). San Francisco: average $56.42/day
 (https://www.rover.com/blog/san-francisco-ca-doggy-day-care-price/). Checked against the linked
 pages myself; figures confirmed accurate.
 
+**My own current day rate: $75.** My own authority, no external source needed.
+
+**Honolulu general-market day rate.** $30–45/day, midpoint ~$37.50, confirmed by specific local
+facilities (Ohana Doggie Daycare $45 full day, Pets in the City Hawaii $39.95, Family and MWR Pet
+Kennels $35–45). Source: https://www.rover.com/blog/honolulu-hi-dog-daycare-price/. Checked
+against the linked page myself; figures confirmed accurate.
+
+**The finding changed once the real numbers were in, and the paper needs to say so.** The brief's
+hypothesis assumed Hawaii lags mainland "bougie" pricing. My own rate ($75) is actually *above*
+every mainland premium benchmark ($52–60), not below it — and roughly double the Honolulu general
+average ($37.50). The real story isn't "Hawaii hasn't caught up to mainland premium pricing" —
+it's that Hawaii barely has a premium tier at all. Mainland cities have enough demand for premium
+care to support a deep field of competing high-end operators, which holds their prices in a
+$52–60 band through competition. Hawaii doesn't have that depth of competition at the top, so my
+price isn't held down the same way. This resolves the open tension from the "Link to course
+economics" section: **market structure (barriers to entry/scarcity) wins over tastes and
+preferences at the premium end** — the "lower cultural priority" story still explains why so few
+Hawaii operators build toward premium at all, but it doesn't explain my own price, which the
+scarcity/barriers-to-entry story does.
+
 ## Figures planned
 
-**Figure 1: my revenue growth rate vs. the national industry growth rate, 2019–2026.** A line
-chart, year on the x-axis (2019 through the 2026 partial point, labeled as such), year-over-year
+**Figure 1: my revenue growth rate vs. the national industry growth rate, 2019–2026 — built.**
+Saved to `figures/figure1-revenue-vs-national.png`. A line chart, year on the x-axis (2019 through
+the 2026 partial point, labeled as such), year-over-year
 growth rate (%) on the y-axis, two lines — my own business and the aggregate APPA national trend.
 Same units on both lines (growth rate, not raw dollars) so they're actually comparable on one
 axis, not a dual-axis chart that just looks comparable. 2018→2019 growth is excluded (startup-year
@@ -153,18 +174,23 @@ by 2024–2025," plus a footnote at the 2020 point citing BLS's −15.6% pet-car
 context for why the aggregate line actually understates how hard services specifically were hit
 that year.
 
-**Figure 2: my day rate vs. mainland high-end benchmarks.** A bar chart — one bar for my own
-rate, one bar each for the New York, Los Angeles, and San Francisco premium-facility figures
-(using the midpoint or a representative value from each range, not the widest end of it).
+**Figure 2: my day rate vs. Honolulu average and mainland premium benchmarks — built.** A bar
+chart, five bars in ascending order: Honolulu average ($37.50), LA premium ($52), SF premium
+($56.42), NYC premium ($60), my own rate ($75, highlighted in a distinct color from the other
+four, which are de-emphasized since they're context, not the subject). Saved to
+`figures/figure2-pricing-comparison.png`.
 
-This is the evidence for the pricing/positioning question: it makes the size of the gap between
-Hawaii and mainland premium pricing visible directly, instead of asking the reader to hold four
-numbers in their head from a sentence. It also sets up the recommendation — whatever pricing
-strategy I argue for has to make sense in light of how big that gap actually is, not a vague
-sense that "mainland is more expensive."
+This is the evidence for the pricing/positioning question, and it reversed what the brief
+assumed: instead of showing a gap *below* mainland pricing, it shows my rate sitting *above*
+every benchmark, roughly double the Honolulu average. That's the direct visual evidence for the
+market-structure-wins finding above — a reader sees the three-tier picture (local average, deep
+mainland premium competition, me alone at the top) in one chart rather than taking my word for
+why my price doesn't fit the brief's original assumption.
 
-Caption plan: state the size of the gap as a finding, e.g. "My rate sits $X below the mainland
-premium average, a gap of Y%," filled in once the numbers are finalized.
+Caption (as built): "Honolulu's general market averages $30–45/day; mainland premium facilities
+(LA, SF, NYC) run $52–60/day; my own day rate is $75 — roughly double the Honolulu average and
+above even mainland premium pricing. With almost no local competition at the premium tier,
+there's little pulling my price back down toward either band."
 
 ## Success criteria
 
