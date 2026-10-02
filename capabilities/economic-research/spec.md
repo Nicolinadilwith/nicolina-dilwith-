@@ -6,16 +6,64 @@
 
 ## Data sources
 
-**My own annual revenue totals, 2022–2026.** Pulled from my own business records. This is the
-core evidence for whether my growth has actually plateaued, and it's the one source nobody else
-can verify for me — it goes in as-is, on my own authority.
+**My own annual revenue totals, 2018–2026.** Pulled from my own business records (bookkeeping
+before 2022 is less precise, but the totals are real). This is the core evidence for whether my
+growth has actually plateaued, and it's the one source nobody else can verify for me — it goes in
+as-is, on my own authority.
+
+| Year | Revenue | YoY growth |
+|------|---------|-----------|
+| 2018 | $3,626 | — |
+| 2019 | $35,835 | +888% (startup-year artifact — excluded from the comparison, see below) |
+| 2020 | $35,550 | −0.8% |
+| 2021 | $43,923 | +23.6% |
+| 2022 | $217,358.95 | +395% |
+| 2023 | $426,115.26 | +96.0% |
+| 2024 | $523,755.33 | +22.9% |
+| 2025 | $566,460.70 | +8.2% |
+| 2026 (through Sept 1) | $373,720.36 | not projected — see note below |
+
+2018 was a near-zero soft-launch base, so 2019's +888% is a base-effect artifact, not a real
+signal — I'm using 2019 as the first "mature" baseline year and excluding the 2018→2019 growth
+rate from the comparison chart (it would also wreck the chart's scale).
+
+2026 is a partial year (through Sept 1) and I'm not projecting a full-year number. Straight-line
+annualizing would say roughly flat vs. 2025, but my business is seasonal — holidays (Nov–Dec) are
+my strongest months, and they're not in this partial figure yet, while the missing-period
+slowdown (late Aug/early Jan, as school starts back) partly overlaps with what *is* in it. A naive
+projection would understate the real number, so the paper will show 2026 as a labeled partial
+point and say in the text that the full year is expected to land higher than a straight-line
+estimate, not state a specific projected figure.
+
+I confirmed directly that the 2024–2025 slowdown was demand cooling off, not me hitting physical
+capacity — so this series is actually testing a demand question, not confounded by being sold out.
 
 **APPA (American Pet Products Association) State of the Industry reports.** Checked against the
 linked pages myself; figures confirmed accurate.
 
-Aggregate national pet-industry spending growth by year: roughly +10.8% (2022), +7.4% (2023, to
-$147B), +3.4% (2024, to $152B), +3.7% (2025, to $158B).
-Source: https://americanpetproducts.org/news/the-american-pet-products-association-appa-releases-2025-state-of-the-industry-report
+| Year | Total industry | YoY growth |
+|------|----------------|-----------|
+| 2019 | $97.1B | — |
+| 2020 | $103.6B | +6.7% |
+| 2021 | $123.6B | +19.3% (computed from the totals; a "13.5%" figure found elsewhere didn't reconcile with the dollar totals, so it's discarded) |
+| 2022 | ~$136.8B | +10.8% |
+| 2023 | $147B | +7.4% |
+| 2024 | $152B | +3.4% |
+| 2025 | $158B | +3.7% |
+
+Sources: https://www.supermarketnews.com/consumer-trends/pet-industry-sales-in-2020-surpass-100-billion-for-first-time
+(2019–2021) and
+https://americanpetproducts.org/news/the-american-pet-products-association-appa-releases-2025-state-of-the-industry-report
+(2022–2025).
+
+**The timing lag is itself a finding, not just a data point to plot.** The national series peaks
+in 2021 (+19.3%) — that's pet food, supplies, and vet care, driven by people acquiring pets while
+stuck at home. My business troughs in 2020 instead (−0.8%), because daycare is the opposite kind
+of good: nobody needs it while everyone's already home. My boom doesn't hit until 2022–2023, a
+full year after the national peak, because it depends on people *leaving* the house again and
+discovering their lockdown dogs can't handle it. I need to say this explicitly in the paper —
+the two series aren't supposed to move together point-for-point; the lag between them is
+evidence for the mechanism, not a mismatch to explain away.
 
 I considered a category-specific series ("other services": grooming, boarding, dog walking,
 training, pet sitting) as a closer match to my own business. It broadly moves in the same
@@ -33,9 +81,9 @@ worth stating that comparison explicitly in the paper so a reviewer doesn't rais
 objection I did before I'd worked through it.
 
 The plan: line up my own year-over-year revenue growth rate against this aggregate national growth
-rate, year by year, to see whether my business's deceleration pattern tracks the national one
-(support for "this is a broad, cohort-driven normalization, not something specific to me or my
-business decisions") or diverges from it in a way that needs its own explanation.
+rate, 2019–2026, to show the full before/during/after story — my 2020 trough against the
+national's 2020 rise, my 2022–2023 boom against the national's already-fading one, and both
+decelerating by 2024–2025 — rather than diverging from it in a way that needs its own explanation.
 
 **Hawaii/Oahu unemployment rate, annual.** For the sustainability question — checking whether my
 plateau lined up with a weakening local economy or happened despite a strengthening one.
@@ -57,22 +105,26 @@ pages myself; figures confirmed accurate.
 
 ## Figures planned
 
-**Figure 1: my revenue growth rate vs. the national industry growth rate, 2022–2026.** A line
-chart, year on the x-axis, year-over-year growth rate (%) on the y-axis, two lines — my own
-business and the aggregate APPA national trend. Same units on both lines (growth rate, not raw
-dollars) so they're actually comparable on one axis, not a dual-axis chart that just looks
-comparable.
+**Figure 1: my revenue growth rate vs. the national industry growth rate, 2019–2026.** A line
+chart, year on the x-axis (2019 through the 2026 partial point, labeled as such), year-over-year
+growth rate (%) on the y-axis, two lines — my own business and the aggregate APPA national trend.
+Same units on both lines (growth rate, not raw dollars) so they're actually comparable on one
+axis, not a dual-axis chart that just looks comparable. 2018→2019 growth is excluded (startup-year
+base effect, would wreck the chart's scale); 2019 is the first plotted baseline year instead.
 
-This is the load-bearing figure for the sustainability question. The claim it's evidence for:
-if my line decelerates roughly the way the national line does, that supports the cohort-effect
-explanation (a broad, national normalization, not something specific to my business); if my line
-diverges sharply from the national one, that points to something specific to me instead, and I'd
-need to say what. The paper would be much weaker without it — the comparison is the whole
-argument for Question 1, and a reader needs to see the two curves side by side rather than take
-my word for how closely they track.
+This is the load-bearing figure for the sustainability question, and now it does more than one
+job. It shows the lag mechanism directly — the national line rising and peaking in 2020–2021
+while mine troughs, then mine exploding in 2022–2023 a year after the national peak — which is
+visual evidence for *why* the two series shouldn't move together point-for-point. And it shows
+both lines decelerating by 2024–2025, which is the actual evidence for the cohort-effect
+explanation (a broad normalization, not something specific to my business). The paper would be
+much weaker without it — a reader needs to see both the lag and the shared deceleration, not take
+my word for either.
 
-Caption plan: state the finding, not just the axes — something like "Both series decelerate over
-the same window, though my business's plateau is [sharper/gentler] than the national trend,"
+Caption plan: state both findings, not just the axes — something like "My business troughs in
+2020 and peaks a year after the national trend, consistent with daycare demand depending on
+people returning to normal activity rather than pet acquisition itself; both series decelerate
+by 2024–2025,"
 filled in once the actual data is plotted.
 
 **Figure 2: my day rate vs. mainland high-end benchmarks.** A bar chart — one bar for my own
