@@ -97,3 +97,17 @@ Separately, and on a longer time horizon, I believe Hawaii lags behind the mainl
 and positioning because it lacks the dog-friendly infrastructure — walkable retail and cafe
 districts that welcome dogs — that many mainland cities have developed. That gap is independent
 of the pandemic-driven boom and will not close simply because the boom itself is fading.
+
+> **Note, added after pulling my own pricing data:** the pricing half of this hypothesis was
+> wrong, and the real finding is more specific than "Hawaii lags." My own day rate ($75) is
+> actually *above* every mainland premium benchmark I found ($52–60/day in LA, SF, and NYC), not
+> below it — and roughly double Honolulu's general market average ($37.50/day). Hawaii's overall
+> market is still priced low, which fits the tastes-and-preferences story above. But that story
+> doesn't explain my own price. What does is the market-structure side of the same tension: the
+> mainland has enough demand for premium care to support a deep field of competing high-end
+> operators, which holds *their* prices in a $52–60 band through competition with each other.
+> Hawaii doesn't have that depth of competition at the premium tier, so my price isn't held down
+> the same way — scarcity gives me pricing power the "lower cultural priority" story alone
+> wouldn't predict. So the two forces aren't a tie to be weighed qualitatively, as I assumed when
+> I wrote this brief: market structure wins at the premium end, while tastes and preferences still
+> explains why so few operators bother building toward that tier in the first place.
