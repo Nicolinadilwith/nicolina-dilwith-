@@ -1,8 +1,4 @@
-<!-- Stage: Plan. Data sources, the model/figures you intend to build, and the success criteria
-     a finished paper has to meet — written by you, not drafted by AI (see AGENTS.md).
-     Replace each bracketed line below; delete this comment when the spec is done. -->
-
-# Spec: [paper title]
+# Spec: A Post-COVID Fading Boom: Cohort-Driven Demand and the Limits of Premium Pricing in Hawaii's Dog Daycare Market
 
 ## Data sources
 
