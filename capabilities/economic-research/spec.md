@@ -65,6 +65,31 @@ discovering their lockdown dogs can't handle it. I need to say this explicitly i
 the two series aren't supposed to move together point-for-point; the lag between them is
 evidence for the mechanism, not a mismatch to explain away.
 
+**BLS "pet care services" output data (NAICS 812910 — boarding, grooming, training, sitting; no
+pet food/products, no veterinary).** Output fell **15.6% from 2019 to 2020**, a real decline in
+the services segment specifically — unlike the APPA aggregate's +6.7% that same year, which is
+inflated by pet food/product spending as people acquired pets while stuck at home. This is a
+much closer match to my own business's −0.8% in 2020 than the aggregate is.
+Source: https://www.bls.gov/opub/btn/volume-13/a-tail-of-productivity-in-pet-care-services-new-technology-enables-rapid-growth.htm
+
+I'm **not** splicing this into the Figure 1 line alongside the APPA series — they measure
+different things (BLS is services-specific output, APPA is total industry dollars including
+products), so mixing them into one continuous series would mix metrics mid-stream without
+saying so. Instead: Figure 1's plotted line stays the consistent APPA series throughout, and I'll
+add a callout at the 2020 point citing this BLS figure as context, plus state it explicitly in
+the written analysis — the paper gets the better-matched number without pretending it's part of
+the same series.
+
+**Grand View Research, "U.S. Pet Daycare Market (2025–2030)."** The narrowest category found —
+scoped to pet daycare specifically, not bundled with grooming or the whole pet industry. Cited
+for the mechanism, not a data series (the full year-by-year history is in the paid report, not
+the free sample I read): it states "Day boarding represented over 60% share of the U.S. Pet
+Daycare market by Service Type in 2024. The key factors contributing to this growth include pet
+parents returning to office post-COVID..." — a third-party market research firm independently
+naming the exact mechanism (return-to-office driving daycare demand) that I describe in my own
+brief. Also has 2024 ($1.73B) and 2025 ($1.87B, ~+8.1%) market-size figures as a minor secondary
+data point. Source: https://www.grandviewresearch.com/industry-analysis/us-pet-daycare-market-report
+
 I considered a category-specific series ("other services": grooming, boarding, dog walking,
 training, pet sitting) as a closer match to my own business. It broadly moves in the same
 direction as the aggregate figure (20% → 7.9% → 5.7%, then also ticking back up in 2025), so it's
@@ -124,8 +149,9 @@ my word for either.
 Caption plan: state both findings, not just the axes — something like "My business troughs in
 2020 and peaks a year after the national trend, consistent with daycare demand depending on
 people returning to normal activity rather than pet acquisition itself; both series decelerate
-by 2024–2025,"
-filled in once the actual data is plotted.
+by 2024–2025," plus a footnote at the 2020 point citing BLS's −15.6% pet-care-services figure as
+context for why the aggregate line actually understates how hard services specifically were hit
+that year.
 
 **Figure 2: my day rate vs. mainland high-end benchmarks.** A bar chart — one bar for my own
 rate, one bar each for the New York, Los Angeles, and San Francisco premium-facility figures
