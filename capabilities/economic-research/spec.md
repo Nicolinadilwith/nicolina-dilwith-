@@ -208,6 +208,10 @@ Checkable claims, not vague goals:
 - [ ] The recommendation is one coherent strategy that accounts for both findings together (demand
   normalizing on a timeline + pricing power from scarcity), not two separate, unconnected points.
 - [ ] The recommendation explicitly states and answers its strongest objection.
+- [ ] The cohort theory's timing mechanism is maturation (dogs settling with age), not mortality —
+  and the paper states what would falsify the theory (accelerating rather than decelerating
+  growth, or a clientele age mix that stayed dominated by the original 2020–21 cohort), per
+  Adam's PR review.
 - [ ] Both figures are captioned with the actual finding stated in words, not just axis labels,
   and each one is referenced by the sentence in the text it's evidence for.
 - [ ] Every number that came from me (not sourced externally) is clearly my own data; every

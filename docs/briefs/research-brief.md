@@ -93,6 +93,23 @@ be a temporary, cohort-driven demand shock tied to this specific generation of l
 dogs, rather than a lasting shift in how people care for their dogs — and I expect it to taper
 off as that generation is gradually replaced.
 
+> **Note, added after PR review:** the timing mechanism above was incomplete. Dogs acquired in
+> 2020 have a 10–13 year lifespan, so they're still mid-life now — aging out through death
+> wouldn't predict a plateau this early, only one starting years from now. What actually explains
+> the earlier timing is maturation, not mortality: separation anxiety fades as a dog settles down
+> with age, well before end-of-life. Most of my current clients are under 5 years old, which fits
+> the original 2020–21 cohort (now 5–6 years old) aging past the range where they need the most
+> intensive care, while younger dogs continuously refresh the client base. I can't measure the
+> cohort's exact share of visits from my records, but I've observed it shrinking as a share of my
+> clientele over time.
+>
+> This theory would be falsified if growth had kept accelerating rather than decelerating, or if
+> my clientele's age mix stayed dominated by the original 2020–21 dogs rather than skewing young —
+> either would mean the cohort never actually settled down or got refreshed. It would also be
+> undercut if the plateau traced to a local economic downturn or lost capacity, but I've already
+> ruled both out: local unemployment was falling, not rising, during the plateau, and I confirmed
+> directly that the slowdown was demand cooling, not me hitting capacity.
+
 Separately, and on a longer time horizon, I believe Hawaii lags behind the mainland in pricing
 and positioning because dogs simply aren't as high a cultural priority for many people here as
 they are on the mainland — the same difference in tastes and preferences from the economics
