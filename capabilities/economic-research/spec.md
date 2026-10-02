@@ -5,19 +5,22 @@
 **My own annual revenue totals, 2018–2026.** Pulled from my own business records (bookkeeping
 before 2022 is less precise, but the totals are real). This is the core evidence for whether my
 growth has actually plateaued, and it's the one source nobody else can verify for me — it goes in
-as-is, on my own authority.
+as-is, on my own authority. Raw dollar figures are kept out of this tracked file per Adam's
+privacy note on PR #17 (repo is public; revenue is internal financials, not already-public
+information) — see `scratch/revenue-figures-private.md` (gitignored) for the actual numbers, or
+ask me directly for them.
 
-| Year | Revenue | YoY growth |
-|------|---------|-----------|
-| 2018 | $3,626 | — |
-| 2019 | $35,835 | +888% (startup-year artifact — excluded from the comparison, see below) |
-| 2020 | $35,550 | −0.8% |
-| 2021 | $43,923 | +23.6% |
-| 2022 | $217,358.95 | +395% |
-| 2023 | $426,115.26 | +96.0% |
-| 2024 | $523,755.33 | +22.9% |
-| 2025 | $566,460.70 | +8.2% |
-| 2026 (through Sept 1) | $373,720.36 | not projected — see note below |
+| Year | YoY growth |
+|------|-----------|
+| 2018 | — |
+| 2019 | +888% (startup-year artifact — excluded from the comparison, see below) |
+| 2020 | −0.8% |
+| 2021 | +23.6% |
+| 2022 | +395% |
+| 2023 | +96.0% |
+| 2024 | +22.9% |
+| 2025 | +8.2% |
+| 2026 (through Sept 1) | not projected — see note below |
 
 2018 was a near-zero soft-launch base, so 2019's +888% is a base-effect artifact, not a real
 signal — I'm using 2019 as the first "mature" baseline year and excluding the 2018→2019 growth
