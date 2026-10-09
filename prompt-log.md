@@ -16,18 +16,27 @@ Running record of AI sessions that materially shaped this repo or its deliverabl
 - **What I got:** a step-by-step fix for each error in turn, plus direct inspection of uploaded workbook/result files to diagnose fractional bed counts, a swapped Start/Final run-log row, and confirmation that a 20/0/0 starting point was infeasible before Solver even began.
 - **What I did with it:** applied each fix in Excel, corrected the run log by hand, and re-ran Solver from both starting points.
 
-## 2026-09-04 through 2026-09-18 — Stage 1.2/1.3: labor-costing convention, workbook rebuild, analysis + memo
+## 2026-09-11 — Stage 1.2 rework: labor-costing convention, named ranges, workbook rebuild
 
 - **Tool:** Claude Code
-- **Asked for:** reconcile the model's 10/19/28 ($16,586) answer against the case's published 10/20/30 ($42,761.66); apply the Stage 1.2 review's required moves (named ranges, file paths, folder cleanup); draft the Stage 1.3 analysis and memo section by section from my own drafts.
-- **What I got:** identification of the labor-costing convention responsible for the gap (discrete $25k/$50k blocks vs. continuous per-hour pricing) and the exact input-precision fix (carrots' hours/bed) needed to match the published figure to the penny; ~27 named ranges added across the workbook; a separate bug found in the per-bed marginal-cost tables (free hours priced at $0 instead of the farmer's rate), which didn't reproduce the case's own check-yourself numbers until corrected.
-- **What I did with it:** rebuilt the Solver Model/P&L/Engine/Marginal Analysis formulas to the corrected convention and fixed the free-hours bug; wrote the analysis findings and memo sections myself, with cell citations and figures added against the corrected model; moved `spec.md`/`model.xlsx` to `capabilities/marginal-analysis/` and removed the duplicate `capabilities/perfect-competition/` folder per the review.
+- **Asked for:** reconcile the model's 10/19/28 ($16,586) answer against the case's published 10/20/30 ($42,761.66); apply the Stage 1.2 review's required moves (named ranges, file paths, folder cleanup).
+- **What I got:** identification of the labor-costing convention responsible for the gap (discrete $25k/$50k blocks vs. continuous per-hour pricing) and the exact input-precision fix (carrots' hours/bed) needed to match the published figure to the penny; ~27 named ranges added across the workbook.
+- **What I did with it:** rebuilt the Solver Model/P&L/Engine/Marginal Analysis formulas to the corrected convention; moved `spec.md`/`model.xlsx` to `capabilities/marginal-analysis/` and removed the duplicate `capabilities/perfect-competition/` folder per the review.
 
-### Reflection (Stage 1.3)
+### Reflection
 
 The model I first built priced temp labor in blocks. Hiring a worker meant paying the full $25,000 for their 1,440 hours whether or not all of it was used. That convention answers $16,586 in profit. The mismatch only surfaced because I asked the AI to reconcile my output against the specific published target. It took several wrong conventions before landing on the right one. Labor priced continuously by the hour, the farmer's first 720 hours "free" and every hour after billed at the temp rate, with no worker blocks. That method caught another error: carrots' hours per bed needed to be 5/6, not 0.833 I had. The difference was about $7 of profit, not noticeable by eyeballing. Both errors only came up because a specific number didn't match and had to be run down by formula.
 
-Two more mismatches turned up the same way. First, total labor cost was off by exactly $25,000. The farmer's hours were treated as free while P&L was billing them at her $34.72/hr implied rate, so it cost off by $25,000. Second, the build didn't reproduce the case's given answers: bed 5 should cost $7,661 and bed 6 should drop to $4,906 as cheaper temp labor takes over, but the build was giving $962 at bed 5. This is a bug AI introduced and didn't catch until we went looking for why the expected dip wasn't showing up, checked against the case's published figures, and found the mismatch. The fix was pricing those first 720 hours at the farmer's $34.72/hr rate instead of $0.
+## 2026-09-18 — Stage 1.3: analysis, memo, free-hours bug fix
+
+- **Tool:** Claude Code
+- **Asked for:** draft the Stage 1.3 analysis and memo section by section from my own drafts.
+- **What I got:** a bug found in the per-bed marginal-cost tables (free hours priced at $0 instead of the farmer's rate), which didn't reproduce the case's own check-yourself numbers until corrected.
+- **What I did with it:** wrote the analysis findings and memo sections myself, with cell citations and figures added against the corrected model.
+
+### Reflection
+
+Two more mismatches turned up the same way as the ones from the prior session. First, total labor cost was off by exactly $25,000. The farmer's hours were treated as free while P&L was billing them at her $34.72/hr implied rate, so it cost off by $25,000. Second, the build didn't reproduce the case's given answers: bed 5 should cost $7,661 and bed 6 should drop to $4,906 as cheaper temp labor takes over, but the build was giving $962 at bed 5. This is a bug AI introduced and didn't catch until we went looking for why the expected dip wasn't showing up, checked against the case's published figures, and found the mismatch. The fix was pricing those first 720 hours at the farmer's $34.72/hr rate instead of $0.
 
 ## 2026-09-25 through 2026-10-09 — Individual research paper: brief, spec, figures, draft
 
