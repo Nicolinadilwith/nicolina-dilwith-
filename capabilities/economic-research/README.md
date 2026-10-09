@@ -9,7 +9,7 @@ preferences), and defending a pricing/positioning recommendation against its str
 challenge, concepts, and hypothesis, including the pricing-hypothesis revision once the real
 numbers came in), `spec.md` in this folder (data sources, figures, success criteria),
 `drafts/2026-10-02-draft.md` (the first full draft), `figures/` (both built figures), and
-`analysis/research-paper.pdf` (the finished paper, once finalized).
+`analysis/research-paper.pdf` (the finished paper).
 
 - `spec.md` — every data source named and checked against its actual page (not a search
   summary), the two figures' specs and captions, and checkable success criteria for the finished

@@ -195,31 +195,31 @@ there's little pulling my price back down toward either band."
 
 Checkable claims, not vague goals:
 
-- [ ] The "why now" claim (plateauing growth, a decision I actually need to make) appears in the
+- [x] The "why now" claim (plateauing growth, a decision I actually need to make) appears in the
   first paragraph, not buried after the COVID backstory.
-- [ ] All three named concepts (income elasticity of demand, market structure/barriers to entry,
+- [x] All three named concepts (income elasticity of demand, market structure/barriers to entry,
   tastes and preferences) are each used by name at least once, tied to a specific claim — not
   just defined in the abstract.
-- [ ] The timing lag (my 2020 trough / 2022–2023 boom vs. the national 2020–2021 rise) is stated
+- [x] The timing lag (my 2020 trough / 2022–2023 boom vs. the national 2020–2021 rise) is stated
   explicitly as mechanism evidence, not left for the reader to notice on their own in Figure 1.
-- [ ] The pricing reversal (my rate above mainland premium, not below it) is addressed head-on in
+- [x] The pricing reversal (my rate above mainland premium, not below it) is addressed head-on in
   the text, including that it updates the brief's original assumption — not quietly dropped or
   smoothed over.
-- [ ] The recommendation is one coherent strategy that accounts for both findings together (demand
+- [x] The recommendation is one coherent strategy that accounts for both findings together (demand
   normalizing on a timeline + pricing power from scarcity), not two separate, unconnected points.
-- [ ] The recommendation explicitly states and answers its strongest objection.
-- [ ] The cohort theory's timing mechanism is maturation (dogs settling with age), not mortality —
+- [x] The recommendation explicitly states and answers its strongest objection.
+- [x] The cohort theory's timing mechanism is maturation (dogs settling with age), not mortality —
   and the paper states what would falsify the theory (accelerating rather than decelerating
   growth, or a clientele age mix that stayed dominated by the original 2020–21 cohort), per
   Adam's PR review.
-- [ ] Both figures are captioned with the actual finding stated in words, not just axis labels,
+- [x] Both figures are captioned with the actual finding stated in words, not just axis labels,
   and each one is referenced by the sentence in the text it's evidence for.
-- [ ] Every number that came from me (not sourced externally) is clearly my own data; every
+- [x] Every number that came from me (not sourced externally) is clearly my own data; every
   number that came from an external source has been checked by me against the actual page, not
   just a search summary.
-- [ ] No business name, repo URL, or other identifying information appears anywhere in the body
+- [x] No business name, repo URL, or other identifying information appears anywhere in the body
   of the paper.
-- [ ] Citations and bibliography are in one consistent style (APA, MLA, or Chicago).
-- [ ] `prompt-log.md` closes with a reflection naming where AI helped, where it got something
+- [x] Citations and bibliography are in one consistent style (APA, MLA, or Chicago).
+- [x] `prompt-log.md` closes with a reflection naming where AI helped, where it got something
   wrong or oversimplified, and how I verified it (the Hawaii-unemployment false lead and the
   dollar-sign chart-rendering bug are both real candidates).
