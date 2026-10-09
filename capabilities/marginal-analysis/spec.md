@@ -130,6 +130,29 @@ allocates labor cost to individual crops and Convention A does not. Do not compu
 blended rate per crop, and do not let Convention B's per-crop allocation feed back into the
 Convention A optimization.
 
+## Structure
+
+The workbook must hold exactly these six sheets, each doing one job:
+
+1. **Inputs** — every named parameter above (prices, bed caps, hours, costs, `DIM_PCT`), as the
+   only sheet where raw numbers are typed. Every other sheet references these by name, never by
+   re-typing a value.
+2. **Solver Model** — the three decision-variable cells (`Q_TOMATOES`, `Q_CARROTS`, `Q_MESCLUN`),
+   the Solver constraint/objective setup documented in text beside it, and the two-run
+   path-dependence log (starting points, final beds, final profit) that Check 3 below reads from.
+3. **Engine** — the labor-hours and marginal-cost formula built out bed-by-bed for one crop
+   (tomatoes), used to verify the core `LABOR_HRS` formula in isolation and to compute marginal
+   cost/marginal profit at a specific `q` for Checks 1 and 2.
+4. **Marginal Analysis** — per-bed marginal cost, marginal revenue, marginal profit, and a
+   profitability flag for every bed of all three crops across their full cap range (not just the
+   optimum), so the dip and crossing points documented in Marginal Cost Behavior above are visible
+   bed by bed.
+5. **P&L** — Convention A and Convention B profit statements at the optimal bed counts,
+   reconciling revenue, fertilizer, labor cost (continuous and blended), and fixed costs to season
+   profit; `PROFIT_A` must equal `PROFIT_B` here, per the Labor Cost Allocation section above.
+6. **Audit** — the validation rules below, each sourced from the sheets above by formula, never
+   re-entered by hand except where a rule explicitly calls for a hardcoded external target.
+
 ## Constraints
 
 - `0 ≤ q_c ≤ BED_CAP[c]` for each crop, integer.
@@ -168,3 +191,36 @@ crop stops being profitable at the margin. Because labor is priced continuously 
 worker-block steps, a crop's own marginal cost crossing its price is a real, decisive signal in
 this model — unlike a lumpy-labor version of the model, there is no separate "not worth hiring a
 whole extra block for a few more beds" effect layered on top.
+
+## Validation rules
+
+A check without a stated target only proves the sheet computed something, not that it computed
+the right thing — these targets are requirements, not implementation detail, and must be
+reproduced by anyone who rebuilds this workbook from this spec. Each rule says what a builder
+does if it fails.
+
+1. **`q = 1` hand anchor (Tomatoes).** `LABOR_HRS(1, TOMATOES)` must equal the case's own stated
+   arithmetic, `1 × 2.5 × 36 × 1.10 = 99` hours, computed independently of the live formula. If it
+   doesn't match: stop before trusting any downstream number — recheck `Inputs` for
+   `TOM_HRS_PER_BED`/`TOM_DIM_PCT` and the `LABOR_HRS` formula's syntax first.
+2. **Intermediate marginal-cost cross-check (Tomatoes, `q = 10`)**, against the course's Farm
+   Profit Lab reference tool. If it doesn't match: recheck Convention A's free-hours-vs-paid-hours
+   split at that bed before assuming the engine formula itself is wrong.
+3. **Solver path-dependence.** Run Solver from two different starting points — `(0, 0, 0)` and
+   `(20, 0, 0)` — and record both runs' final beds and profit. If the two runs disagree, report the
+   higher-profit run and state explicitly that the objective's non-convexity (from the
+   `(1 + DIM_PCT)^q` term) means GRG Nonlinear is only guaranteed to find a local optimum, not the
+   global one.
+4. **Constraint and feasibility reconciliation.** Every decision variable and total — each crop's
+   beds, total beds, and paid temp-labor hours — must sit at or under its cap. Any one of them
+   reading "EXCEEDS" means the candidate solution is infeasible and must be rejected regardless of
+   the profit figure it reports.
+5. **Formulas, not pasted values.** Every revenue, fertilizer, labor-hour, labor-cost, and profit
+   cell on `P&L`, `Engine`, and `Solver Model` must be a live formula referencing `Inputs` and the
+   three decision cells — confirmed by reading the formula bar, not just the displayed value. The
+   only hardcoded numbers allowed anywhere in the workbook are rule 1's hand-check value and the
+   two Solver seed points in rule 3.
+6. **Acceptance figure.** `PROFIT_A` at `(10, 20, 30)` must match the case's published answer,
+   **$42,761.66**, within **$0.01**. If it falls outside that tolerance, the model does not match
+   the case's convention and must be reworked — per the Labor Cost Allocation section above — before
+   it can be used for anything downstream (the Stage 1.3 memo or analysis).
