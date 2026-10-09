@@ -4,7 +4,10 @@ I'm the owner and operator of a small dog daycare business on Oahu. I've been tr
 
 ## Engagements
 
-_No engagements yet — this section will list each course deliverable (brief, analysis, decision memo) as it's added, linked to the capability it belongs to._
+| Engagement | Capability | Brief | Deliverable |
+|---|---|---|---|
+| Perfect-competition farm case | [`marginal-analysis`](capabilities/marginal-analysis/) | [brief](docs/briefs/perfect-competition-brief.md) | [analysis](analysis/perfect-competition-analysis.md) · [memo](docs/decisions/perfect-competition-memo.md) |
+| Post-COVID dog daycare pricing | [`economic-research`](capabilities/economic-research/) | [brief](docs/briefs/research-brief.md) | [research paper](analysis/research-paper.pdf) |
 
 ## Repo structure
 
