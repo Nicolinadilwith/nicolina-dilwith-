@@ -28,3 +28,19 @@ Running record of AI sessions that materially shaped this repo or its deliverabl
 The model I first built priced temp labor in blocks. Hiring a worker meant paying the full $25,000 for their 1,440 hours whether or not all of it was used. That convention answers $16,586 in profit. The mismatch only surfaced because I asked the AI to reconcile my output against the specific published target. It took several wrong conventions before landing on the right one. Labor priced continuously by the hour, the farmer's first 720 hours "free" and every hour after billed at the temp rate, with no worker blocks. That method caught another error: carrots' hours per bed needed to be 5/6, not 0.833 I had. The difference was about $7 of profit, not noticeable by eyeballing. Both errors only came up because a specific number didn't match and had to be run down by formula.
 
 Two more mismatches turned up the same way. First, total labor cost was off by exactly $25,000. The farmer's hours were treated as free while P&L was billing them at her $34.72/hr implied rate, so it cost off by $25,000. Second, the build didn't reproduce the case's given answers: bed 5 should cost $7,661 and bed 6 should drop to $4,906 as cheaper temp labor takes over, but the build was giving $962 at bed 5. This is a bug AI introduced and didn't catch until we went looking for why the expected dip wasn't showing up, checked against the case's published figures, and found the mismatch. The fix was pricing those first 720 hours at the farmer's $34.72/hr rate instead of $0.
+
+## 2026-09-25 through 2026-10-09 — Individual research paper: brief, spec, figures, draft
+
+- **Tool:** Claude Code
+- **Asked for:** work through the Ask/Plan/Draft stages of the individual research paper — a challenge in my own words, data sources checked against real pages, two figures built from specs I reviewed, and reaction to drafts I wrote myself in Word.
+- **What I got:** [fill in — candidates below]
+- **What I checked:** [fill in]
+- **What I did with it:** [fill in]
+
+### Reflection
+
+[Yours to write. A few things from this session that are real candidates if useful, not a draft to copy:
+
+- An AI-supplied number that turned out wrong and had to be caught: an early search handed back "Hawaii unemployment 5.7% in December 2022," which didn't fit the rest of the series and turned out to be inconsistent with the actual BLS/Statista figures once double-checked — discarded before it went in the spec.
+- A place where AI oversimplified: the first version of the cohort-timing mechanism assumed dogs "aging out" meant literal replacement/death over a 10-13 year lifespan, which Adam's PR review caught as inconsistent with a plateau showing up as early as 2024-2025 — the real mechanism (maturation, not mortality) only came out once that was pointed out and I supplied the "most clients are under 5" detail.
+- An error that crept back in: a sentence I'd already caught and fixed reverted after a later edit/re-upload, and had to be caught a second time — worth noting since it's a reminder that AI-assisted edits need rechecking each time a file changes hands, not just once.]
