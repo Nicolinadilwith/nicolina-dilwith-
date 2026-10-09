@@ -33,14 +33,14 @@ Two more mismatches turned up the same way. First, total labor cost was off by e
 
 - **Tool:** Claude Code
 - **Asked for:** work through the Ask/Plan/Draft stages of the individual research paper — a challenge in my own words, data sources checked against real pages, two figures built from specs I reviewed, and reaction to drafts I wrote myself in Word.
-- **What I got:** [fill in — candidates below]
-- **What I checked:** [fill in]
-- **What I did with it:** [fill in]
+- **What I got:** national and local data series (APPA pet-industry growth, BLS pet-care-services output, Hawaii unemployment, mainland and Honolulu daycare pricing) pulled and organized year-by-year; two figures built from specs I wrote; a line-by-line read of my own draft that caught a fabricated-looking reference list, a continuity gap (a "retail's floor space" reference with nothing introducing it), an unsupported claim, and grammar breaks from my own edits.
+- **What I checked:** every external figure against the actual source page, not the search summary alone — this is how the fake Hawaii unemployment number and the six ungrounded APPA citations got caught before they reached the spec or the paper.
+- **What I did with it:** chose the challenge, wrote the brief and hypothesis, decided the recommendation and its objection myself; used the verified data and built figures in the spec and the paper; rebuilt the reference list to the real sources once the fabricated ones were caught.
 
 ### Reflection
 
-[Yours to write. A few things from this session that are real candidates if useful, not a draft to copy:
+AI was extremely helpful when it came to searching the web in one fell swoop for statistics that represent what I am trying to compare, finding numbers across years and organizing them in a way that is easy to examine. Doing that myself would have taken a lot more time and reading, and I probably would not have found statistics from reports that were published as reflections of the industry from earlier years, since those "old" reports would not be considered relevant for someone searching for the climate on this industry unless they were specifically doing a comparison or study like I am.
 
-- An AI-supplied number that turned out wrong and had to be caught: an early search handed back "Hawaii unemployment 5.7% in December 2022," which didn't fit the rest of the series and turned out to be inconsistent with the actual BLS/Statista figures once double-checked — discarded before it went in the spec.
-- A place where AI oversimplified: the first version of the cohort-timing mechanism assumed dogs "aging out" meant literal replacement/death over a 10-13 year lifespan, which Adam's PR review caught as inconsistent with a plateau showing up as early as 2024-2025 — the real mechanism (maturation, not mortality) only came out once that was pointed out and I supplied the "most clients are under 5" detail.
-- An error that crept back in: a sentence I'd already caught and fixed reverted after a later edit/re-upload, and had to be caught a second time — worth noting since it's a reminder that AI-assisted edits need rechecking each time a file changes hands, not just once.]
+My original References section had six APPA "State of the industry" citations, one for each year, but each one was pointing to just the generic APPA homepage. Only two real sources actually existed behind the growth-rate numbers, and the other numbers needed to be verified by searching through the site. They looked like proper citations, but they weren't actually verified source by source.
+
+Although using AI to find data was very efficient, everything needs to pass a "real life" logic check instead of taking it at face value. For example, an early search handed back a Hawaii unemployment figure (5.7% in December 2022) that didn't fit the rest of the series and turned out to be wrong. We caught and discarded it before it ever reached the spec.
